@@ -1,0 +1,1 @@
+# Aqui van todos las costantes que se necesiten usar en todo el proyecto.

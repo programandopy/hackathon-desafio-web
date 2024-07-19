@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "d99d3bb6-c2a2-4404-a8e0-ac1506dd5283",
+		"name": "HACKATHON - DESAFIO WEB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17781381"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mathi@gmail.com.py\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/security/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"security",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5MTNiMDE3MTYzNzM0M2FlZWYyYiIsImVtYWlsIjoibWF0aGlAZ21haWwuY29tLnB5IiwidXNlcm5hbWUiOiJNYXRoaWFzIEx1Z28iLCJpYXQiOjE3MjEzMTEwOTUsImV4cCI6MTcyMTMyOTA5NX0.Sga7F114rDu27E6tIhNxlZ5wNt4ugJrOVSo375Miax8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/security/refresh-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"security",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mathias Lugo\",\r\n    \"email\": \"mathipy@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Places",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5MTNiMDE3MTYzNzM0M2FlZWYyYiIsImVtYWlsIjoibWF0aGlAZ21haWwuY29tLnB5IiwidXNlcm5hbWUiOiJNYXRoaWFzIEx1Z28iLCJpYXQiOjE3MjEzMTIyNzYsImV4cCI6MTcyMTMxMjU3Nn0.wgefwqxBH5IQs4OxmmeinIy3gbP7qGTPqtNRX3AU-bo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"textQuery\" : \"Restausante, Encarnacion, Paraguay\"//La categoria debe ir antes de la primera coma como se muestra en el ejemplo.\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/maps/search-places",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"maps",
+						"search-places"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

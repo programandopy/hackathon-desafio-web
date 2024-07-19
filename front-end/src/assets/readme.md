@@ -1,0 +1,1 @@
+# Aqui van todos los archivos estaticos (Imagenes, logos, svg, fonts, etc).
