@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 export const Restaurantes = () => {
     const [restaurante, setRestaurante] = useState([]);
@@ -18,7 +18,6 @@ export const Restaurantes = () => {
                 {restaurante.map((restaurante) => (
                     <li key={restaurante._id}>
                         <h2>{restaurante.nombre}</h2>
-                        <img src={restaurante.imagen} alt={restaurante.nombre} />
                     </li>
                 ))}
             </ul>

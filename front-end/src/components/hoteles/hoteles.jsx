@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 export const Hoteles = () => {
     const [hoteles, setHoteles] = useState([]);
 
@@ -17,7 +17,6 @@ export const Hoteles = () => {
                 {hoteles.map((hotel) => (
                     <li key={hotel._id}>
                         <h2>{hotel.nombre}</h2>
-                        <img src={hotel.imagen} alt={hotel.nombre} />
                     </li>
                 ))}
             </ul>
@@ -25,5 +24,7 @@ export const Hoteles = () => {
         </div>
     );
 };
+
+
 
  

@@ -6,11 +6,14 @@ const userApi = require("./api/UserApi");
 const securityApi = require("./api/SecurityApi");
 const categoryApi = require("./api/CategoryApi");
 const cors = require("cors");
+const path = require('path');
+
 require("dotenv").config();
 
 //middleware
 app.use(express.json());
 app.use(cors());
+//app.use('/images', express.static(path.join(__dirname, '/home/tilleria/Downloads')));
 
 //database connection
 mongoose

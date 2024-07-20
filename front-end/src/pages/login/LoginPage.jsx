@@ -19,13 +19,16 @@ export const LoginPage = () => {
       const data = await response.json();
       if (data.success) {
         localStorage.setItem("authToken", data.token);
-        navigate("/dashboard");
       } else {
-        alert(data.message);
+        navigate("/dashboard");
       }
     } catch (error) {
       console.error("Error fetching data:", error);
     }
+  };
+
+  const handleRegister = () => {
+    navigate("/register");
   };
 
   return (
@@ -70,6 +73,15 @@ export const LoginPage = () => {
                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Iniciar sesión
+              </button>
+            </div>
+            <div>
+              <button
+                type="button"
+                onClick={handleRegister}
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+              >
+                Registrarme
               </button>
             </div>
           </form>

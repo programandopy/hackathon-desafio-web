@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-
-export const bancos = () => {
+const Bancos = () => {
   const [places, setPlaces] = useState([]);
 
   useEffect(() => {
@@ -14,17 +13,13 @@ export const bancos = () => {
   return (
     <div>
       <h1>Bancos</h1>
-      <p>Lista de Bancos</p>
       <ul>
         {places.map((place, index) => (
-          <li key={index}>
-            <h3>{place.name}</h3>
-            <p>{place.imagen}</p>
-            {/* Add more details as needed */}
-          </li>
+          <li key={index}>{place.nombre}</li>
         ))}
       </ul>
     </div>
   );
 };
 
+export default Bancos;
