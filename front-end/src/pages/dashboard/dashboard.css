@@ -78,8 +78,8 @@ select {
 ection {
   padding: 20px;
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas filas */
-  gap: 20px; /* Espacio entre los elementos de la cuadrilla */
+  flex-wrap: wrap;
+  gap: 20px; 
 }
 
 section ul {
@@ -92,32 +92,32 @@ section ul {
 }
 
 section li {
-  flex: 1 1 calc(33.333% - 20px); /* Tres columnas con espacio entre ellas */
+  flex: 1 1 calc(33.333% - 20px); 
   box-sizing: border-box;
-  background-color: #f0f4f8; /* Fondo claro para los ítems */
+  background-color: #f0f4f8; 
   padding: 15px;
   border-radius: 10px;
   text-align: center;
 }
 
 section h3 {
-  background-color: #4a90e2; /* Fondo del título */
-  color: white; /* Color del texto del título */
+  background-color: #4a90e2;
+  color: white; 
   padding: 10px;
   border-radius: 5px;
 }
 
 section img {
   width: 100%;
-  max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+  max-width: 300px; 
   height: auto;
-  border-radius: 10px; /* Bordes redondeados para la imagen */
+  border-radius: 10px; 
 }
 
 section a {
   display: block;
   margin-top: 10px;
-  background-color: #4a90e2; /* Mismo color de fondo que el título */
+  background-color: #4a90e2; 
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -125,5 +125,5 @@ section a {
 }
 
 section a:hover {
-  background-color: #357abd; /* Color de fondo al pasar el mouse */
+  background-color: #357abd; 
 }
