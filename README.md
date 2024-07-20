@@ -25,7 +25,7 @@ Encarnación, conocida como la "Perla del Sur", es una ciudad con gran potencial
 
 5. **Armado de Itinerario**
    - Permitir al usuario crear y listar itinerarios.
-   - Los itinerarios se componen por un listado de lugares con la hora, de manera agrupada.
+   - Los itinerarios se componen por un listado de lugares con la hora, de manera agrupada por día.
    - La información de cada itinerario debe ser almacenada en la base de datos.
 
 ## Requerimientos Técnicos
