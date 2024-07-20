@@ -9,7 +9,7 @@ router.post('/', async (request, response) => {
         if (!status.success) {
             return response.status(400).json({message: status.message});
         }
-
+    
         return response.status(200).json({message: status.message});
 
     } catch (error) {
