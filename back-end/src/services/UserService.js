@@ -5,9 +5,7 @@ class UserService {
 
     static async createUser(user) {
 
-        if (!user.username) {
-            return {success: false, message: 'El nombre de usuario es requerido'};
-        }
+        
         if (!user.email) {
             return {success: false, message: 'La dirección de correo es requerida'};
         }
